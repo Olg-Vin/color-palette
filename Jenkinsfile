@@ -10,9 +10,9 @@ pipeline {
   }
 
   environment {
-    NS  = "shiniasse"
-    APP = "student-card-shiniasse"
-    IMAGE = "shini4/student-card-shiniasse"
+    NS  = "vinio"
+    APP = "color-palette-rep"
+    IMAGE = "viniio/color-palette-rep"
   }
 
   options {
@@ -32,7 +32,7 @@ pipeline {
       options { timeout(time: 30, unit: 'MINUTES') }
       steps {
         withCredentials([usernamePassword(
-          credentialsId: 'shiniasse-dockerhub-creds',
+          credentialsId: 'vinio-dockerhub-cred',
           usernameVariable: 'DOCKERHUB_USER',
           passwordVariable: 'DOCKERHUB_PASS'
         )]) {
