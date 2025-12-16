@@ -73,7 +73,7 @@ pipeline {
             fi
 
             kubectl -n "${NS}" set image deploy/"${APP}" "${APP}"="${IMAGE}:${GIT_COMMIT}"
-            kubectl -n "${NS}" rollout status deploy/"${APP}" --timeout=180s
+            kubectl -n "${NS}" rollout status deploy/"${APP}" --timeout=360s
           """
         }
       }
