@@ -16,4 +16,4 @@ spec:
               service:
                 name: color-palette-rep
                 port:
-                  number: 8080
+                  number: 80
