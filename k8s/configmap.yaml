@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: student-card-config
+data:
+  PORT: "8080"
+  COLOR_PRIMARY: "#999999"
+  COLOR_SECONDARY: "#999999"
+  COLOR_ACCENT: "#999999"
