@@ -11,7 +11,7 @@ class ColorPaletteController {
      * "Цветовая палитра из переменных окружения"
      * Jenkins передаёт 3 цвета, приложение отображает их в HTML
      */
-    @GetMapping(value = "/palette", produces = "text/html; charset=UTF-8")
+    @GetMapping(value = "/", produces = "text/html; charset=UTF-8")
     public String palette() {
         String color1 = getEnv("COLOR_PRIMARY");
         String color2 = getEnv("COLOR_SECONDARY");
