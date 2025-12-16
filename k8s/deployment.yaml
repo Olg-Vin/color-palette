@@ -20,7 +20,7 @@ spec:
       terminationGracePeriodSeconds: 20
       containers:
         - name: color-palette-rep
-          image: viniio/color-palette-rep:1.0
+          image: viniio/color-palette-rep:latest
           ports:
             - containerPort: 8080
           envFrom:
